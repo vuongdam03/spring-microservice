@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: boot-admin
+  boot:
+    admin:
+      client:
+        url: http://localhost:8090
+server:
+  port: 8090

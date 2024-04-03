@@ -1,3 +1,14 @@
 spring:
   application:
     name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${URI}
+          search-paths:
+            - dev
+            - prod
+          default-label: main
+server:
+  port: 8888

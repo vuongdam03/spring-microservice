@@ -2,4 +2,14 @@ spring:
   application:
     name: order-service
   config:
-    import: optional:configserver:localhost
+    import: optional:configserver:http://localhost:8888
+  profiles:
+    active: dev
+---
+spring:
+  application:
+    name: order-service
+  config:
+    import: optional:configserver:http://localhost:8888
+  profiles:
+    active: prod
